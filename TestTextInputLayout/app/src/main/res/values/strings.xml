@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestTextInputLayout</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="email">邮箱</string>
+    <string name="register">注册</string>
+    <string name="username_not_null">用户名不能为空</string>
+    <string name="pass_not_null">密码不能为空</string>
+    <string name="email_not_null">邮箱不能为空</string>
+</resources>
