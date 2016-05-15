@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.mac.texttablayout.MainActivity">
+
+    <Button
+        android:id="@+id/simple_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Simple_TabLayout" />
+
+    <Button
+        android:id="@+id/scroll_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="scroll_TabLayout" />
+
+    <Button
+        android:text="Image_Text_TabLayout"
+        android:id="@+id/image_text_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:text="Image_TabLayout"
+        android:id="@+id/image_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
