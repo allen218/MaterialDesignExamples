@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             if (!validateEmail()) {
                 return;
             }
-
+            isHasRequestFocus = false;
             Snackbar.make(mRootView, "注册成功!", Snackbar.LENGTH_SHORT).show();
         });
     }
