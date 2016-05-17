@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.root_view)
     CoordinatorLayout mRootView;
 
+    private boolean isHasRequestFocus;//是否已经为空
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,11 +87,19 @@ public class MainActivity extends AppCompatActivity {
     private boolean validateUsername() {
         if (TextUtils.isEmpty(mUsername.getText().toString().trim())) {
             mUsernameLayout.setError(getString(R.string.username_not_null));
-            mUsername.requestFocus();
+            requestFocus(mUsername);
         } else {
             mUsernameLayout.setErrorEnabled(false);
         }
         return true;
+    }
+
+    private void requestFocus(EditText editText) {
+        if (!isHasRequestFocus) {
+            editText.requestFocus();
+            isHasRequestFocus = true;
+        }
+
     }
 
     /**
@@ -100,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean validatePassword() {
         if (TextUtils.isEmpty(mPass.getText().toString().trim())) {
             mPassLayout.setError(getString(R.string.pass_not_null));
-            mPass.requestFocus();
+            requestFocus(mPass);
         } else {
             mPassLayout.setErrorEnabled(false);
         }
@@ -115,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean validateEmail() {
         if (TextUtils.isEmpty(mEmail.getText().toString().trim())) {
             mEmailLayout.setError(getString(R.string.email_not_null));
-            mEmail.requestFocus();
+            requestFocus(mEmail);
         } else {
             mEmailLayout.setErrorEnabled(false);
         }
