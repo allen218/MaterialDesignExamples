@@ -93,12 +93,12 @@ public class ImageAndTextTabLayoutActivity extends AppCompatActivity {
         adapter.addFragment(NormalFragment.newInstance("ONE"), "ONE");
         adapter.addFragment(NormalFragment.newInstance("TWO"), "TWO");
         adapter.addFragment(NormalFragment.newInstance("THREE"), "THREE");
-        adapter.addFragment(NormalFragment.newInstance("FOUR"), "FOUR");
-        adapter.addFragment(NormalFragment.newInstance("FIVE"), "FIVE");
-        adapter.addFragment(NormalFragment.newInstance("SIX"), "SIX");
-        adapter.addFragment(NormalFragment.newInstance("SENVEN"), "SENVEN");
-        adapter.addFragment(NormalFragment.newInstance("EIGHT"), "EIGHT");
-        adapter.addFragment(NormalFragment.newInstance("NINE"), "NINE");
+//        adapter.addFragment(NormalFragment.newInstance("FOUR"), "FOUR");
+//        adapter.addFragment(NormalFragment.newInstance("FIVE"), "FIVE");
+//        adapter.addFragment(NormalFragment.newInstance("SIX"), "SIX");
+//        adapter.addFragment(NormalFragment.newInstance("SENVEN"), "SENVEN");
+//        adapter.addFragment(NormalFragment.newInstance("EIGHT"), "EIGHT");
+//        adapter.addFragment(NormalFragment.newInstance("NINE"), "NINE");
         mViewPager.setAdapter(adapter);
     }
 

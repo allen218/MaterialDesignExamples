@@ -33,7 +33,7 @@ public class ScrollTabLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.simple_tab_layout);
+        setContentView(R.layout.scroll_tab_layout);
         ButterKnife.bind(this);
 
         initData();
